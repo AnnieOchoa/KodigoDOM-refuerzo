@@ -25,7 +25,7 @@ const search = async () => {
         pokeContainer.classList.add("row", "justify-content-center", "mt-4")
         pokeContainer.innerHTML = `
         <div class="card text-start" style="background-color:lightgrey; width: 18rem; border:1px solid ${pokeTypeColor(type)};">
-            <img src=${data.sprites.front_default} class="card-img-top rounded-3 mt-3 card-img-background" alt="...">
+            <img src=${data.sprites.other.dream_world.front_default} class="card-img-top rounded-3 mt-3 card-img-background" alt="...">
             <div class="card-body">
                 <h5 class="card-title" style="color:${pokeTypeColor(type)};">${firstUpper(data.name)}</h5>
                 <p class="card-text">Es un pokemon de tipo <span class="fw-bold rounded-2">${type}</span>, ${secondType(data)} su primera aparición fue en Pokemon ${appearance(dataVersion)}</p>
@@ -74,8 +74,8 @@ const errorAPI = (error) => {
     errorMessage.classList.add("row", "justify-content-center")
     errorMessage.innerHTML = `
     <div class="col">
-        <p class="text-danger-emphasis bg-danger-subtle border border-danger-subtle rounded-3">
-            El pokemn solicitado no existe
+        <p class="text-danger-emphasis my-3 bg-danger-subtle border border-danger-subtle rounded-3">
+            El pokemon solicitado no existe
         </p>
     </div>
     `
