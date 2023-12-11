@@ -1,0 +1,44 @@
+.body-custom {
+    min-height: 80vh; 
+    height:auto; 
+    background-image: url(https://pokemonrevolution.net/forum/uploads/monthly_2021_03/DVMT-6OXcAE2rZY.jpg.afab972f972bd7fbd4253bc7aa1cf27f.jpg); 
+    background-repeat: no-repeat; 
+    background-size:cover; 
+    background-position: center;
+}
+
+.bg-transparent {
+    background: transparent;
+}
+
+.card-img-background{
+    background-image: url(https://i.pinimg.com/736x/4f/f3/2a/4ff32a2085f9bcece606cc887a6c82c2.jpg);
+}
+
+.ul-font-size {
+    font-size: 0.7em;
+}
+
+.stat-label {
+    display: inline-block;
+    width: 14em;
+    font-weight: 500;
+}
+
+@media screen and (min-width:576px) {
+    html{
+        font-size: 1.05rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    html{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width:992px) {
+    html{
+        font-size: 1.2rem;
+    }
+}
