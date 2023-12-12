@@ -1,62 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="styles.css" />
     <title>POKEMON</title>
-    <link rel="icon" href="https://res.cloudinary.com/dyhftwfrw/image/upload/v1702314702/dazpiujuobeicxdiwwyo.ico" sizes="32x32">
-  </head>
+    <link rel="icon" href="https://res.cloudinary.com/dyhftwfrw/image/upload/v1702314702/dazpiujuobeicxdiwwyo.ico"
+        sizes="32x32">
+</head>
 
-
-  <body>
-    <div class="body-custom">
-      <header class="main-header">
-        <div
-          class="text-bg-light p-2 d-flex p-2 justify-content-between bg-opacity-75 images"
-        >
-          <img
-            src="images/pokeball.png"
-            alt="pokeball"
-            class="object-fit-contain"
-          />
-          <img src="images/logo.png" alt="logo" />
-          <img
-            src="images/pokeball.png"
-            alt="pokeball"
-            class="object-fit-contain"
-          />
+<body class="body-custom">
+    <header class="main-header">
+        <div class="text-bg-light p-2 d-flex p-2 justify-content-between bg-opacity-75 images">
+            <img src="images/pokeball.png" alt="pokeball" class="object-fit-contain" />
+            <img src="images/logo.png" alt="logo" />
+            <img src="images/pokeball.png" alt="pokeball" class="object-fit-contain" />
         </div>
-      </header>
-
-      <div class="container text-center mt-3 mb-5" id="pokemon-container-id">
-        <div class="row justify-content-center">
-          <div class="col-auto mt-3">
-            <input
-              id="input-search"
-              type="text"
-              class="form-control"
-              placeholder="Pokemon"
-              aria-label="Username"
-              aria-describedby="basic-addon1"
-              onkeydown="cleanerError()"
-            />
-          </div>
-          <div class="col-auto mt-3">
-            <button class="btn btn-primary" onclick="search()">
-              Catch it!
-            </button>
-          </div>
+    </header>
+        <div class="container text-center mt-3 pb-5 main-content" id="pokemon-container-id">
+            <div class="row justify-content-center">
+                <div class="col-auto mt-3">
+                    <input id="input-search" type="text" class="form-control" placeholder="Pokemon"
+                        aria-label="Username" aria-describedby="basic-addon1" onkeydown="cleanerError()" />
+                </div>
+                <div class="col-auto mt-3">
+                    <button class="btn btn-primary" id="button-search" onclick="search()">
+                        Catch it!
+                    </button>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-
     <footer class="main-footer">
         <div class="main-footer__picture">
         </div>
@@ -65,7 +41,8 @@
                 <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c325.png" alt="" role="presentation">
             </button>
             <button id="bulbasaur" class="main-footer__content--card">
-                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8f9e0537-6693-4131-ad2a-e910276fff83/d9zfl1f-a3751430-e340-4965-a22a-c4c87ed65767.png/v1/fill/w_1024,h_1024/bulbasaur_png_by_kriss116_d9zfl1f-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzhmOWUwNTM3LTY2OTMtNDEzMS1hZDJhLWU5MTAyNzZmZmY4M1wvZDl6ZmwxZi1hMzc1MTQzMC1lMzQwLTQ5NjUtYTIyYS1jNGM4N2VkNjU3NjcucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.qIgapXMcZVW7ByYBkhNDtD4-lsPawADfw614UeIwD0I" alt="" role="presentation">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8f9e0537-6693-4131-ad2a-e910276fff83/d9zfl1f-a3751430-e340-4965-a22a-c4c87ed65767.png/v1/fill/w_1024,h_1024/bulbasaur_png_by_kriss116_d9zfl1f-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcLzhmOWUwNTM3LTY2OTMtNDEzMS1hZDJhLWU5MTAyNzZmZmY4M1wvZDl6ZmwxZi1hMzc1MTQzMC1lMzQwLTQ5NjUtYTIyYS1jNGM4N2VkNjU3NjcucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.qIgapXMcZVW7ByYBkhNDtD4-lsPawADfw614UeIwD0I"
+                    alt="" role="presentation">
             </button>
             <button id="charmander" class="main-footer__content--card">
                 <img src="https://www.pngmart.com/files/13/Charmander-PNG-Clipart.png" alt="" role="presentation">
@@ -74,5 +51,6 @@
     </footer>
 
     <script src="app.js"></script>
-  </body>
+</body>
+
 </html>
