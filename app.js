@@ -160,3 +160,16 @@ const pokeTypeColor = (pokemonType) => {
     }
     return color;
 }
+
+//Footer functionality
+
+const cards = document.querySelectorAll('.main-footer__content--card')
+
+cards.forEach( card => {
+    card.addEventListener('click', ({target:{parentElement}}) => {
+        document.querySelector('#input-search')
+            .value = parentElement.id
+        search()
+    })
+})
+

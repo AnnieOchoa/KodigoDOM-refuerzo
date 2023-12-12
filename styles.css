@@ -1,9 +1,9 @@
 .body-custom {
-    min-height: 80vh; 
-    height:auto; 
-    background-image: url(https://pokemonrevolution.net/forum/uploads/monthly_2021_03/DVMT-6OXcAE2rZY.jpg.afab972f972bd7fbd4253bc7aa1cf27f.jpg); 
-    background-repeat: no-repeat; 
-    background-size:cover; 
+    min-height: 80vh;
+    height:auto;
+    background-image: url(https://pokemonrevolution.net/forum/uploads/monthly_2021_03/DVMT-6OXcAE2rZY.jpg.afab972f972bd7fbd4253bc7aa1cf27f.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
     background-position: center;
     background-attachment: fixed;
 }
@@ -42,4 +42,67 @@
     html{
         font-size: 1.2rem;
     }
+}
+
+
+/* Header */
+
+.images {
+    display: flex;
+
+}
+.images img {
+    width: 150px;
+}
+
+
+
+@media (max-width: 768px) {
+    .images img {
+        width: 75px;
+    }
+}
+
+/* Footer */
+.main-footer__picture{
+    margin-top: 30px;
+    height: 300px;
+    width: 100%;
+    background: linear-gradient(
+        to bottom,
+        #ffffff,
+        #0000005f),
+        url(https://res.cloudinary.com/dy6gbr4oc/image/upload/v1702336120/poke_icaesv.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main-footer__content{
+    background-color: #405839;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.main-footer__content--card{
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #fff;
+    display: grid;
+    place-items: center;
+    background: none;
+    cursor: pointer;
+    outline: 1px solid #fff;
+    transition: 400ms;
+}
+.main-footer__content--card:hover{
+    outline-offset: 30px;
+    outline-color: transparent;
+}
+.main-footer__content--card img{
+    width: 100%;
 }
